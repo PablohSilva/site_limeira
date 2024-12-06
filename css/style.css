@@ -139,7 +139,7 @@ nav a:hover{
     /* text-decoration: underline; */
     color: #bbce8a;
 
-    font-size: .8rem;
+    /* font-size: .8rem; */
 }
 
 nav img{
@@ -155,6 +155,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    padding: 50px;
 
     i{
         color: grey;
@@ -256,7 +257,7 @@ iframe{
 .tabela3{
     border-collapse: separate;
     width: 100%;
-    margin-bottom: 400px;
+    margin-bottom: 90px;
 
     th {
         background-color: antiquewhite;
@@ -307,3 +308,76 @@ iframe{
 
 
 }
+
+
+
+
+
+
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    nav, article, footer {
+        width: 90%;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    nav img{
+        align-items: center;
+    }
+
+    nav span {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card2 {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav img {
+        width: 80px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
